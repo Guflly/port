@@ -101,3 +101,17 @@ document.querySelector('.back-to-top')?.addEventListener('click', (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Mobile menu
+(function mobileMenu(){
+  const btn = document.querySelector('.nav-toggle');
+  if(!btn) return;
+  const toggle = () => {
+    const open = document.body.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', String(open));
+  };
+  btn.addEventListener('click', toggle);
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+    if (document.body.classList.contains('nav-open')) toggle();
+  }));
+})();

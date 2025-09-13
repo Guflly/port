@@ -4,15 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>gufl · Developer Portfolio</title>
-    <meta name="description" content="Portfolio of gufl · Java & JavaScript developer focused on performance, UX, and practical details." />
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="description" content="Minecraft plugin developer." />
+    <meta name="theme-color" content="#ff0000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ff0000" media="(prefers-color-scheme: light)">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="gufl · Developer Portfolio" />
-    <meta property="og:description" content="Java & JavaScript developer focused on performance and clean UX." />
-    <meta property="og:image" content="/og.png" />
+    <meta property="og:description" content="Minecraft plugin developer." />
+    <meta property="og:image" content="./nobg.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="./nobg.png" />
     <link rel="icon" href="./nobg.png" type="image/png" />
+    <link rel="shortcut icon" href="./nobg.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./nobg.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -27,14 +30,16 @@
           <span class="logo"></span>
           <span class="brand-text">gufl</span>
         </a>
-        <div class="nav-links">
-          <a href="previews.html">Previews</a>
-          <a href="pricing.html">Pricing</a>
+        <div class="nav-links" id="primary-navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="previews/index.html">Previews</a>
+          <a href="pricing/index.html">Pricing</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="nav-actions">
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
           <button class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
             <span class="sun" aria-hidden>☀</span>
             <span class="moon" aria-hidden>☾</span>
@@ -53,7 +58,7 @@
             </h1>
             
             <div class="cta">
-              <a class="button primary" href="previews.html">Video Previews</a>
+              <a class="button primary" href="previews/index.html">Video Previews</a>
               <a class="button ghost" href="#contact">Get In Touch</a>
             </div>
             <ul class="socials" aria-label="Social links">
