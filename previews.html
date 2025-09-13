@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video Previews · gufl</title>
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="description" content="YouTube previews of projects and plugins by gufl." />
+    <link rel="icon" href="./nobg.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="preload">
+    <a class="skip-link" href="#previews">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand" aria-label="Homepage">
+          <span class="logo"></span>
+          <span class="brand-text">gufl</span>
+        </a>
+        <div class="nav-links">
+          <a href="#previews" class="active">Previews</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
+            <span class="sun" aria-hidden>☀</span>
+            <span class="moon" aria-hidden>☾</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="previews" class="previews-hero">
+        <div class="previews-header">
+          <div class="ph-text">
+            <h1>Video Previews</h1>
+            <p class="muted">Short clips and walkthroughs of plugins, mods, and JavaScript/Java work.</p>
+          </div>
+          <div class="ph-media">
+            <img src="nobg.png" alt="Header image" class="ph-img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="previews-grid">
+          <article class="preview-card reveal">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/KYhT817j2-Q" title="Block Displays" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="preview-title">Block Displays</h3>
+            <p class="muted">Block Display Preview Test</p>
+          </article>
+          <article class="preview-card reveal">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/I2RGPjcrqqQ" title="Affinity SMP - ShadowCast Ability 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="preview-title">Affinity SMP - ShadowCast Ability 3</h3>
+            <p class="muted">For the Affinity SMP - Commissioned by grayrat</p>
+          </article>
+          <article class="preview-card reveal">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/mHIksyyU50Y" title="Cube Fog Test" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="preview-title">Cube Fog Test</h3>
+            <p class="muted">Cube fog and stuff</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> gufl. Crafted with care.</p>
+      <a href="#" class="back-to-top" aria-label="Back to top">↑</a>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
